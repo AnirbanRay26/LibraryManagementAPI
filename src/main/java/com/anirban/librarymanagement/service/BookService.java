@@ -52,6 +52,13 @@ public class BookService {
     public List<BookResponse> byCategory(String category) {
         return books.findByCategoryIgnoreCase(category).stream().map(BookResponse::from).toList();
     }
+    @Transactional(readOnly = true)
+    public List<BookResponse> byAuthor(String author) {
+        return books.findByAuthorContainingIgnoreCase(author)
+                .stream()
+                .map(BookResponse::from)
+                .toList();
+    }
     private Book find(Long id) {
         return books.findById(id).orElseThrow(() -> new ResourceNotFoundException("Book not found: " + id));
     }
