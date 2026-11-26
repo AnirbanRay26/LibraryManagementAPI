@@ -28,4 +28,8 @@ public class BookController {
     @GetMapping("/category/{category}") public List<BookResponse> byCategory(@PathVariable String category) {
         return service.byCategory(category);
     }
+    @GetMapping("/author/{author}")
+    public List<BookResponse> byAuthor(@PathVariable String author) {
+        return service.byAuthor(author);
+    }
 }
