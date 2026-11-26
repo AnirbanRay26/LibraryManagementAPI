@@ -1,0 +1,13 @@
+SUBMISSION CHECKLIST
+[ ] Project starts successfully in Spring Boot
+[ ] MySQL database library_db is created
+[ ] Book APIs tested in Postman
+[ ] Student APIs tested in Postman
+[ ] Issue, return, and overdue APIs tested in Postman
+[ ] Invalid data / duplicate data / missing record tests captured
+[ ] Postman collection exported
+[ ] Screenshots saved in a Screenshots folder
+[ ] README setup instructions reviewed
+[ ] GitHub repository created and project pushed
+[ ] development and feature/book-management branches created and pushed
+[ ] Verify that application.properties contains no real database password before pushing

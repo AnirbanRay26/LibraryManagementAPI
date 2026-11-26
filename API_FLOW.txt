@@ -1,0 +1,11 @@
+HOW THE PROJECT WORKS
+
+1. Controller: receives HTTP requests and sends responses.
+2. Service: contains the business rules and transaction logic.
+3. Repository: uses Spring Data JPA to access MySQL.
+4. Entity: represents database tables (Book, Student, BookIssue).
+5. DTO: controls the request/response JSON shape.
+
+BookIssue has two Many-to-One relationships: many issue records can refer to one student and one book.
+When an issue is created, one available copy is decremented. On return, it is incremented again.
+A transaction keeps the issue record and copy count changes together.

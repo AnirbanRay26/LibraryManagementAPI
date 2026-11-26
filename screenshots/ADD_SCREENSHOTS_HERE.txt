@@ -1,0 +1,1 @@
+Save Postman response screenshots here after running the collection. Capture the successful POST, GET, PUT, DELETE, issue/return, and validation/error responses required by your instructor.
